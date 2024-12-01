@@ -1,0 +1,245 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/css/site.min.css",
+      "PackagePath": "staticwebassets/css/site.min.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/greetings.json",
+      "PackagePath": "staticwebassets/greetings.json"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/images/banner1.svg",
+      "PackagePath": "staticwebassets/images/banner1.svg"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/images/banner2.svg",
+      "PackagePath": "staticwebassets/images/banner2.svg"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/images/banner3.svg",
+      "PackagePath": "staticwebassets/images/banner3.svg"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/js/site.min.js",
+      "PackagePath": "staticwebassets/js/site.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/.bower.json",
+      "PackagePath": "staticwebassets/lib/bootstrap/.bower.json"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.min.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/bootstrap/dist/js/npm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/npm.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation-unobtrusive/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/.bower.json"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery-validation/.bower.json"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery/.bower.json",
+      "PackagePath": "staticwebassets/lib/jquery/.bower.json"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Web/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TennisBookings.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.TennisBookings.Web.props",
+      "PackagePath": "build\\TennisBookings.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TennisBookings.Web.props",
+      "PackagePath": "buildMultiTargeting\\TennisBookings.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TennisBookings.Web.props",
+      "PackagePath": "buildTransitive\\TennisBookings.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = TennisBookings.Web.Tests
+build_property.ProjectDir = /Users/muratseker/Documents/repos/tennisbookings/test/TennisBookings.Web.Tests/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

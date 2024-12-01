@@ -1,0 +1,21 @@
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.deps.json
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.dll
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.pdb
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.csproj.AssemblyReference.cache
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.AssemblyInfoInputs.cache
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.AssemblyInfo.cs
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.csproj.CoreCompileInputs.cache
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.dll
+/Users/muratseker/Downloads/NET/2-Integration Testing ASP.NET Core 3 Applications Best Practices/integration-testing-asp-dot-net-core-applications-best-practices/M2/0_Before/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.pdb
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.deps.json
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.dll
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/bin/Debug/netstandard2.0/SimulatedCloudSdk.pdb
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.csproj.AssemblyReference.cache
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.AssemblyInfoInputs.cache
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.AssemblyInfo.cs
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.csproj.CoreCompileInputs.cache
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.sourcelink.json
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.dll
+/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/Debug/netstandard2.0/SimulatedCloudSdk.pdb

@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = WeatherService.Api
+build_property.ProjectDir = /Users/muratseker/Documents/repos/tennisbookings/src/WeatherService.Api/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
