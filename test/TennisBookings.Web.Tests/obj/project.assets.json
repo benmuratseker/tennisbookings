@@ -8687,6 +8687,7 @@
       "packagesPath": "/Users/muratseker/.nuget/packages/",
       "outputPath": "/Users/muratseker/Documents/repos/tennisbookings/test/TennisBookings.Web.Tests/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "/Users/muratseker/.nuget/NuGet/NuGet.Config"
       ],

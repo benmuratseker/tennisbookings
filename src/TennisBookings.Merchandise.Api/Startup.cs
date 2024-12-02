@@ -27,7 +27,7 @@ namespace TennisBookings.Merchandise.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddHealthChecks();
+            services.AddHealthChecks();//http://localhost:5120/healthcheck returns ok Healthy
 
             services.AddQueueClient();
             services.AddSingleton<ICloudQueue, CloudQueue>();

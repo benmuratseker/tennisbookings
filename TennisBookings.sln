@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisBookings.Merchandise.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatedCloudSdk", "src\external\SimulatedCloudSdk\SimulatedCloudSdk.csproj", "{82701DF1-5D4B-42C7-8D6F-B53479F77957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisBookings.Merchandise.Api.IntegrationTests", "test\TennisBookings.Merchandise.Api.IntegrationTests\TennisBookings.Merchandise.Api.IntegrationTests.csproj", "{F79036BC-E460-4888-BD42-D302C10810AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,18 @@ Global
 		{82701DF1-5D4B-42C7-8D6F-B53479F77957}.Release|x64.Build.0 = Release|Any CPU
 		{82701DF1-5D4B-42C7-8D6F-B53479F77957}.Release|x86.ActiveCfg = Release|Any CPU
 		{82701DF1-5D4B-42C7-8D6F-B53479F77957}.Release|x86.Build.0 = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|x64.Build.0 = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Debug|x86.Build.0 = Debug|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|x64.ActiveCfg = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|x64.Build.0 = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|x86.ActiveCfg = Release|Any CPU
+		{F79036BC-E460-4888-BD42-D302C10810AF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +114,7 @@ Global
 		{F0F52D37-9C6E-405B-85CF-FB91A1D0CB21} = {AD0738BA-577C-463D-8617-1B9D4544FE14}
 		{77377BBC-4C10-4221-8516-C401A7952AC8} = {B5BA0B59-8D91-4F07-8090-34BDE097EFC9}
 		{82701DF1-5D4B-42C7-8D6F-B53479F77957} = {02F9AF1C-3F55-4AC5-AD84-2409E1EA45B0}
+		{F79036BC-E460-4888-BD42-D302C10810AF} = {AD0738BA-577C-463D-8617-1B9D4544FE14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48D28C8F-7C17-44A2-8CBC-FE82743DB063}

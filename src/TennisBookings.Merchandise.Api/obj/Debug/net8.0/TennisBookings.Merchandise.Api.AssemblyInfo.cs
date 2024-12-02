@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TennisBookings.Merchandise.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ec8812823a7df853642fd1becb12689495cf275")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10184efee2517e0a7801fa0d1384f5f759a090e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TennisBookings.Merchandise.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TennisBookings.Merchandise.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

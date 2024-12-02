@@ -13,6 +13,7 @@
         "packagesPath": "/Users/muratseker/.nuget/packages/",
         "outputPath": "/Users/muratseker/Documents/repos/tennisbookings/src/external/SimulatedCloudSdk/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/muratseker/.nuget/NuGet/NuGet.Config"
         ],
@@ -78,6 +79,7 @@
         "packagesPath": "/Users/muratseker/.nuget/packages/",
         "outputPath": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Merchandise.Api/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/muratseker/.nuget/NuGet/NuGet.Config"
         ],

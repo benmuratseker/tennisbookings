@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "dJbzTwdt37vt+PhpxJ9REMciq8a3XqJfG+QaGC1zEE4=",
+  "Source": "TennisBookings.Merchandise.Api.IntegrationTests",
+  "BasePath": "_content/TennisBookings.Merchandise.Api.IntegrationTests",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/muratseker/Documents/repos/tennisbookings/src/TennisBookings.Merchandise.Api/TennisBookings.Merchandise.Api.csproj",
+      "Version": 2,
+      "Source": "TennisBookings.Merchandise.Api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

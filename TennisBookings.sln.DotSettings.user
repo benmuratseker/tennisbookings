@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f829d34_002D6623_002D44ea_002Dadbb_002D3df402e1b510/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HealthCheck_ReturnsOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.HealthCheckTests.HealthCheck_ReturnsOk&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0F52D37-9C6E-405B-85CF-FB91A1D0CB21::net8.0::TennisBookings.Web.Tests.WeatherApiClientTests.GetWeatherForecastAsync_ReturnsWeatherApiResult_WhenHttpRequestSucceeds&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
