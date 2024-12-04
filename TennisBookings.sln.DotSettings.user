@@ -1,5 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f829d34_002D6623_002D44ea_002Dadbb_002D3df402e1b510/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HealthCheck_ReturnsOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ATestInvoker_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fc3ec25c53b94f51fa21da479c513e551efee2b5ae49a79934686d2bb714d46_003FTestInvoker_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a26654e_002D7be7_002D4149_002D92a3_002Df1498b6e58b5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAll_ReturnsExpectedJson" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnsExpectedJson&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f829d34_002D6623_002D44ea_002Dadbb_002D3df402e1b510/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="HealthCheck_ReturnsOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.HealthCheckTests.HealthCheck_ReturnsOk&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F0F52D37-9C6E-405B-85CF-FB91A1D0CB21::net8.0::TennisBookings.Web.Tests.WeatherApiClientTests.GetWeatherForecastAsync_ReturnsWeatherApiResult_WhenHttpRequestSucceeds&lt;/TestId&gt;
@@ -7,5 +13,14 @@
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.ReturnsContent&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnExpectedJson&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnExpectedMediaType&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnsExpectedJson&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=640341cf_002D34e7_002D4754_002D88d6_002Dc12ff1641087/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAll_ReturnsExpectedJson #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnsExpectedJson&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.ReturnsContent&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnExpectedMediaType&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.CategoriesControllerTests.GetAll_ReturnSuccessStatusCode&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
