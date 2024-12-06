@@ -188,6 +188,10 @@
               "target": "Package",
               "version": "[17.8.0, )"
             },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[6.0.0, )"

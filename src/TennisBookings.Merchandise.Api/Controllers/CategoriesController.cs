@@ -15,7 +15,8 @@ namespace TennisBookings.Merchandise.Api.Controllers
             _categoryProvider = categoryProvider;
 
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]       
+        [ProducesResponseType(StatusCodes.Status200OK)]  
+        [ResponseCache(Duration = 300)]
         public ActionResult<CategoriesOutputModel> GetAll()
         {
             var allowedCategories = _categoryProvider.AllowedCategories();
