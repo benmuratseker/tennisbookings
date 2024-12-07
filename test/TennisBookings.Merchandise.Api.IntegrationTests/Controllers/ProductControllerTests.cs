@@ -1,8 +1,12 @@
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.TestHost;
+using TennisBookings.Merchandise.Api.Data;
 using TennisBookings.Merchandise.Api.Data.Dto;
 using TennisBookings.Merchandise.Api.External.Database;
 using TennisBookings.Merchandise.Api.IntegrationTests.Fakes;
 using TennisBookings.Merchandise.Api.IntegrationTests.Models;
+using TennisBookings.Merchandise.Api.IntegrationTests.TestHelpers.Serialization;
 
 namespace TennisBookings.Merchandise.Api.IntegrationTests.Controllers;
 
@@ -82,5 +86,44 @@ public class
         
         Assert.NotNull(product);
         Assert.Equal(firstProduct.Name, product.Name);
+    }
+
+    [Fact]
+    public async Task Post_WithoutName_ReturnsBadRequest()
+    {
+        var productInputModel = GetValidProuctInputModel().CloneWith(m => m.Name = null);
+        
+        var response = await _client.PostAsJsonAsync($"", productInputModel, JsonSerializerHelper.DefaultSerialisationOptions);
+        
+        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+    }
+
+    [Fact]
+    public async Task Post_InvalidName_ReturnsExpectedProblemDetails()
+    {
+        var productInputModel = GetValidProuctInputModel().CloneWith(m => m.Name = null);
+        
+        var response = await _client.PostAsJsonAsync($"", productInputModel, JsonSerializerHelper.DefaultSerialisationOptions);
+        
+        var problemDetails = await response.Content.ReadFromJsonAsync<ValidationProblemDetails>();
+        
+        Assert.Collection(problemDetails?.Errors, kvp =>
+        {
+            Assert.Equal("Name", kvp.Key);
+            var error = Assert.Single(kvp.Value);
+            Assert.Equal("The Name field is required.", error);
+        });
+    }
+    public static TestProductInputModel GetValidProuctInputModel(Guid? id = null)
+    {
+        return new TestProductInputModel
+        {
+            Id = id is object ? id.Value.ToString() : Guid.NewGuid().ToString(),
+            Name = "Some Product",
+            Description = "Some Description",
+            Category = new CategoryProvider().AllowedCategories().First(),
+            InternalReference = "ABC123",
+            Price = 4.00m
+        };
     }
 }

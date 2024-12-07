@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimulatedCloudSdk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2e977116c89c50a20229b111ccea271e883314e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fde2717fb8c4da7744196f8d7fe085e6be18b73f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimulatedCloudSdk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimulatedCloudSdk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
