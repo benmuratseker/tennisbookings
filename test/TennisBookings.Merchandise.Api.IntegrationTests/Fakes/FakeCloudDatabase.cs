@@ -16,7 +16,8 @@ public class FakeCloudDatabase : ICloudDatabase
 
     public Task<ProductDto> GetAsync(string id)
     {
-        return Task.FromResult(Products.SingleOrDefault(p => p.Id.ToString() == id));
+        return Task.FromResult(
+            Products.SingleOrDefault(p => p.Id.ToString() == id));
     }
 
     public Task InsertAsync(string id, ProductDto product)
@@ -29,7 +30,7 @@ public class FakeCloudDatabase : ICloudDatabase
     {
         return Task.FromResult(Products as IReadOnlyCollection<ProductDto>);
     }
-    
+
     public void ReplaceCustomProducts(IReadOnlyCollection<ProductDto> products)
     {
         _customDefaultProducts = products;
