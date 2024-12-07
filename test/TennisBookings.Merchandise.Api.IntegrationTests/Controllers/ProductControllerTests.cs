@@ -1,6 +1,9 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.TestHost;
 using TennisBookings.Merchandise.Api.Data;
+using TennisBookings.Merchandise.Api.External.Queue;
+using TennisBookings.Merchandise.Api.IntegrationTests.Fakes;
 using TennisBookings.Merchandise.Api.IntegrationTests.Models;
 using TennisBookings.Merchandise.Api.IntegrationTests.TestHelpers.Serialization;
 
@@ -177,6 +180,25 @@ public class
         
         var getResponse = await _client.GetAsync(response.Headers.Location.ToString());
         getResponse.EnsureSuccessStatusCode();
+    }
+
+    [Fact]
+    public async Task Post_WithValidProduct_SendsQueueMessage()
+    {
+        var cloudQueue = new FakeCloudQueue();
+        var client = _factory.WithWebHostBuilder(builder =>
+        {
+            builder.ConfigureTestServices(services =>
+            {
+                services.AddSingleton<ICloudQueue>(cloudQueue);
+            });
+        }).CreateClient();
+
+        var content = GetValidProductJsonContent(Guid.NewGuid());
+        
+        var response = await client.PostAsync("", content);
+
+        Assert.Single(cloudQueue.Requests);
     }
     
     private static JsonContent GetValidProductJsonContent(Guid? id = null)
