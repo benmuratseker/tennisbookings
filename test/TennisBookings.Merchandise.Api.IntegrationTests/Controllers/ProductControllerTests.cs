@@ -153,6 +153,32 @@ public class
         Assert.Equal($"http://localhost/api/products/{id}", response.Headers.Location.ToString().ToLower());
     }
     
+    [Fact]
+    public async Task Post_WithValidProduct_ReturnsCreatedResult()
+    {
+        var id = Guid.NewGuid();
+        var content = GetValidProductJsonContent(id);
+        
+        var response = await _client.PostAsync("", content);
+        
+        Assert.Equal(HttpStatusCode.Created, response.StatusCode);
+        Assert.Equal($"http://localhost/api/products/{id}", response.Headers.Location.ToString().ToLower());
+    }
+    
+    [Fact]
+    public async Task Post_AfterPostingValidProduct_ItCanBeRetrieved()
+    {
+        var id = Guid.NewGuid();
+        var content = GetValidProductJsonContent(id);
+        
+        var response = await _client.PostAsync("", content);
+
+        response.EnsureSuccessStatusCode();
+        
+        var getResponse = await _client.GetAsync(response.Headers.Location.ToString());
+        getResponse.EnsureSuccessStatusCode();
+    }
+    
     private static JsonContent GetValidProductJsonContent(Guid? id = null)
     {
         return JsonContent.Create(GetValidProductInputModel(id));

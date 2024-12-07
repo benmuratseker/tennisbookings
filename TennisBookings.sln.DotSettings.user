@@ -51,5 +51,7 @@
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.ProductControllerTests.Post_WithInvalidName_ReturnsExpectedProblemDetails&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.ProductControllerTests.Post_WithoutName_ReturnsBadRequest_WithInvalidInput&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.ProductControllerTests.Post_WithExistingName_ReturnsConflict_WithExpectedLocation&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.ProductControllerTests.Post_WithValidProduct_ReturnsCreatedResult&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Controllers.ProductControllerTests.Post_AfterPostingValidProduct_ItCanBeRetrieved&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
