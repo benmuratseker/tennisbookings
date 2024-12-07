@@ -1,10 +1,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.TestHost;
 using TennisBookings.Merchandise.Api.Data;
-using TennisBookings.Merchandise.Api.Data.Dto;
-using TennisBookings.Merchandise.Api.External.Database;
-using TennisBookings.Merchandise.Api.IntegrationTests.Fakes;
 using TennisBookings.Merchandise.Api.IntegrationTests.Models;
 using TennisBookings.Merchandise.Api.IntegrationTests.TestHelpers.Serialization;
 
@@ -46,7 +42,8 @@ public class
 
         #endregion
 
-        _factory.FakeCloudDatabase.ResetDefaultProducts(useCustomIfAvailable: false);
+        _factory.FakeCloudDatabase.ResetDefaultProducts(
+            useCustomIfAvailable: false);
         var products =
             await _client.GetFromJsonAsync<ExpectedProductModel[]>("");
 
@@ -80,10 +77,10 @@ public class
 
         #endregion
 
-        var firstProduct =_factory.FakeCloudDatabase.Products.First();
+        var firstProduct = _factory.FakeCloudDatabase.Products.First();
         var product = await _client.GetFromJsonAsync<ExpectedProductModel>(
             $"{firstProduct.Id}");
-        
+
         Assert.NotNull(product);
         Assert.Equal(firstProduct.Name, product.Name);
     }
@@ -91,9 +88,22 @@ public class
     [Fact]
     public async Task Post_WithoutName_ReturnsBadRequest()
     {
-        var productInputModel = GetValidProuctInputModel().CloneWith(m => m.Name = null);
-        
-        var response = await _client.PostAsJsonAsync($"", productInputModel, JsonSerializerHelper.DefaultSerialisationOptions);
+        var productInputModel =
+            GetValidProductInputModel().CloneWith(m => m.Name = null);
+
+        var response = await _client.PostAsJsonAsync($"", productInputModel,
+            JsonSerializerHelper.DefaultSerialisationOptions);
+
+        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+    }
+    
+    [Theory]
+    [MemberData(nameof(GetInvalidInputs))]
+    public async Task Post_WithoutName_ReturnsBadRequest_WithInvalidInput(
+        TestProductInputModel productInputModel)
+    {
+        var response = await _client.PostAsJsonAsync("", productInputModel,
+            JsonSerializerHelper.DefaultSerialisationOptions);
         
         Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
     }
@@ -101,12 +111,14 @@ public class
     [Fact]
     public async Task Post_InvalidName_ReturnsExpectedProblemDetails()
     {
-        var productInputModel = GetValidProuctInputModel().CloneWith(m => m.Name = null);
-        
-        var response = await _client.PostAsJsonAsync($"", productInputModel, JsonSerializerHelper.DefaultSerialisationOptions);
-        
-        var problemDetails = await response.Content.ReadFromJsonAsync<ValidationProblemDetails>();
-        
+        var productInputModel = GetValidProductInputModel().CloneWith(m => m.Name = null);
+
+        var response = await _client.PostAsJsonAsync($"", productInputModel,
+            JsonSerializerHelper.DefaultSerialisationOptions);
+
+        var problemDetails = await response.Content
+            .ReadFromJsonAsync<ValidationProblemDetails>();
+
         Assert.Collection(problemDetails?.Errors, kvp =>
         {
             Assert.Equal("Name", kvp.Key);
@@ -114,7 +126,39 @@ public class
             Assert.Equal("The Name field is required.", error);
         });
     }
-    public static TestProductInputModel GetValidProuctInputModel(Guid? id = null)
+
+    [Theory]
+    [MemberData(nameof(GetInvalidInputsAndProblemDetailsErrorValidator))]
+    public async Task Post_WithInvalidName_ReturnsExpectedProblemDetails(
+        TestProductInputModel productInputModel,
+        Action<KeyValuePair<string, string[]>> validator)
+    {
+        var response = await _client.PostAsJsonAsync("", productInputModel,
+            JsonSerializerHelper.DefaultSerialisationOptions);
+        
+        var problemDetails = await response.Content.ReadFromJsonAsync<ValidationProblemDetails>();
+        
+        Assert.Collection(problemDetails.Errors, validator);
+    }
+
+    [Fact]
+    public async Task Post_WithExistingName_ReturnsConflict_WithExpectedLocation()
+    {
+        var id = _factory.FakeCloudDatabase.Products.First().Id;
+        var content = GetValidProductJsonContent(id);
+        
+        var response = await _client.PostAsync("", content);
+        
+        Assert.Equal(HttpStatusCode.Conflict, response.StatusCode);
+        Assert.Equal($"http://localhost/api/products/{id}", response.Headers.Location.ToString().ToLower());
+    }
+    
+    private static JsonContent GetValidProductJsonContent(Guid? id = null)
+    {
+        return JsonContent.Create(GetValidProductInputModel(id));
+    }
+
+    public static TestProductInputModel GetValidProductInputModel(Guid? id = null)
     {
         return new TestProductInputModel
         {
@@ -125,5 +169,169 @@ public class
             InternalReference = "ABC123",
             Price = 4.00m
         };
+    }
+
+    public static IEnumerable<object[]> GetInvalidInputsAndProblemDetailsErrorValidator()
+    {
+        var testData = new List<object[]>
+        {
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Id = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Id", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("A non-default ID is required.", error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel()
+                    .CloneWith(x => x.Id = Guid.Empty.ToString()),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Id", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("A non-default ID is required.", error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Id = "NOT-A-GUID"),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("$.Id", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.StartsWith(
+                        "The JSON value could not be converted to System.Guid.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Name = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Name", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("The Name field is required.", error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel()
+                    .CloneWith(x => x.Name = new string('a', 257)),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Name", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal(
+                        "The field Name must be a string with a maximum length of 256.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel()
+                    .CloneWith(x => x.Description = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Description", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("The Description field is required.", error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Category = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Category", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("The Category field is required.", error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel()
+                    .CloneWith(x => x.Category = "NOT ALLOWED"),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Category", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal(
+                        "The category did not match any of the allowed categories.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Price = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Price", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal(
+                        "The field Price must be between 0.01 and 10000.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Price = 0m),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Price", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal(
+                        "The field Price must be between 0.01 and 10000.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel().CloneWith(x => x.Price = 10000.01m),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("Price", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal(
+                        "The field Price must be between 0.01 and 10000.",
+                        error);
+                })
+            },
+
+            new object[]
+            {
+                GetValidProductInputModel()
+                    .CloneWith(x => x.InternalReference = null),
+                new Action<KeyValuePair<string, string[]>>(kvp =>
+                {
+                    Assert.Equal("InternalReference", kvp.Key);
+                    var error = Assert.Single(kvp.Value);
+                    Assert.Equal("The InternalReference field is required.",
+                        error);
+                })
+            },
+        };
+
+        return testData;
+    }
+
+    public static IEnumerable<object[]> GetInvalidInputs()
+    {
+        return GetInvalidInputsAndProblemDetailsErrorValidator()
+            .Select(x => new[] { x[0] });
     }
 }
