@@ -35,6 +35,7 @@
     &lt;TestId&gt;xUnit::F79036BC-E460-4888-BD42-D302C10810AF::net8.0::TennisBookings.Merchandise.Api.IntegrationTests.Middleware.MetricMiddlewareTests.RequestForPage_ResultsInExpectedMetrics&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::955198A2-779A-4934-AE0A-202EEA02A6C5::net8.0::TennisBookings.Web.IntegrationTests.Pages.GeneralPageTests.ValidUrls_ReturnSuccessAndExpectedContentType&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::955198A2-779A-4934-AE0A-202EEA02A6C5::net8.0::TennisBookings.Web.IntegrationTests.Pages.HomePageTests.Get_ReturnsPageWithExpectedH1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::955198A2-779A-4934-AE0A-202EEA02A6C5::net8.0::TennisBookings.Web.IntegrationTests.Pages.HomePageTests.HomePageIncludesForecast_ForExpectedConfigVariations&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7cc1e82a_002D10ca_002D479d_002Dbe6e_002D5d9babb4c11f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetStockTotal_ReturnsSuccessStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
