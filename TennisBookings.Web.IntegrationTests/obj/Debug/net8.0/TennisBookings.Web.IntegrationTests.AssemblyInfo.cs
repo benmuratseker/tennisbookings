@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TennisBookings.Web.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09643c5b652bf140a1c3357ab5adaadbe878fcd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bef399c9f48dbd24097ae00fe9854956d6ef6b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TennisBookings.Web.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TennisBookings.Web.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
