@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KKl8XHawvDQ=",
+  "dgSpecHash": "Tpvvgf29bN4=",
   "success": true,
   "projectFilePath": "/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/TennisBookings.Web.IntegrationTests.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore/3.1.3/microsoft.entityframeworkcore.3.1.3.nupkg.sha512",
     "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.3/microsoft.entityframeworkcore.abstractions.3.1.3.nupkg.sha512",
     "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.3/microsoft.entityframeworkcore.analyzers.3.1.3.nupkg.sha512",
+    "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore.inmemory/3.1.3/microsoft.entityframeworkcore.inmemory.3.1.3.nupkg.sha512",
     "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.3/microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512",
     "/Users/muratseker/.nuget/packages/microsoft.entityframeworkcore.sqlserver/3.1.3/microsoft.entityframeworkcore.sqlserver.3.1.3.nupkg.sha512",
     "/Users/muratseker/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.3/microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",

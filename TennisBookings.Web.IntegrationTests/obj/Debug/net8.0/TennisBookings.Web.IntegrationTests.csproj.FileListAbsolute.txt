@@ -333,8 +333,6 @@
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Testing.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.AspNetCore.TestHost.dll
-/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
-/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.Bcl.HashCode.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
@@ -453,3 +451,6 @@
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/obj/Debug/net8.0/TennisBookings.Web.IntegrationTests.genruntimeconfig.cache
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/obj/Debug/net8.0/ref/TennisBookings.Web.IntegrationTests.dll
 /Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/AngleSharp.dll
+/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/muratseker/Documents/repos/tennisbookings/TennisBookings.Web.IntegrationTests/bin/Debug/net8.0/Microsoft.Bcl.HashCode.dll
